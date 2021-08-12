@@ -3,11 +3,9 @@
     <div class="col">
       <h1>Bookmark</h1>
 
-      <%= simple_form_for @Bookmark do |f| %>
-        <%= f.input :title %>
-        <%= f.input :overview %>
-        <%= f.input :rating %>
-        <%= f.input :poster_url %>
+      <%= simple_form_for [@list, @bookmark] do |f| %>
+        <%= f.input :comment %>
+        <%= f.association :movie %>
         <%= f.submit class: 'btn btn-primary' %>
       <% end %>
     </div>
