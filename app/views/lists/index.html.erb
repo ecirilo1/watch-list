@@ -14,3 +14,7 @@
 
 <%= cl_image_tag("sample.jpeg",
       width: 150, height: 150, crop: :thumb) %>
+      
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>')">
+  coucou
+</div>
