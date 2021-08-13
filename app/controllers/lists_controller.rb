@@ -20,4 +20,9 @@ class ListsController < ApplicationController
   def show
     @list = List.find(params[:id])
   end
+  
+  def list_params
+    params.require(:list).permit(:name, :photo)
+  end
+
 end
