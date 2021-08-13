@@ -51,3 +51,4 @@ end
 gem 'rails-controller-testing', group: [:test]
 gem 'rspec-rails', group: [:test]
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'dotenv-rails', groups: [:development, :test]
